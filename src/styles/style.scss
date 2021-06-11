@@ -3,6 +3,7 @@
 // 2. variables
 // 3. header
 // 4. app
+// 5. user
 
 // 1. reset
 @import "./reset";
@@ -25,4 +26,9 @@ header {
 main {
     background-color: $neutral-color-100;
     min-height: 100vh;
+}
+
+// 5. user
+.user {
+    border: $primary-color 1px solid;
 }

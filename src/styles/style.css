@@ -76,4 +76,8 @@ main {
   background-color: #effafa;
   min-height: 100vh;
 }
+
+.user {
+  border: #5ba4a4 1px solid;
+}
 /*# sourceMappingURL=style.css.map */
