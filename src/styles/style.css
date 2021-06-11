@@ -51,6 +51,7 @@ html {
 body {
   line-height: 1.5;
   font-size: 1.8rem;
+  font-family: "Spartan";
 }
 
 * {
@@ -59,5 +60,20 @@ body {
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+header {
+  background-color: #5ba4a4;
+  width: 100%;
+  height: 250px;
+  background-image: url(../images/bg-header-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: #effafa;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
