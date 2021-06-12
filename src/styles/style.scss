@@ -4,7 +4,8 @@
 // 3. header
 // 4. app
 // 5. user
-// 6. media query
+// 6. search bar
+// 7. media query
 
 // 1. reset
 @import "./reset";
@@ -20,6 +21,14 @@
     border-radius: 1000px;
     background-color: $background;
     color: white;
+}
+@mixin panel {
+    background-color: white;
+    width: 80%;
+    border: $primary-color 1px solid;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem 1rem $primary-color;
 }
 
 // 3. header
@@ -46,15 +55,10 @@ main {
 
 // 5. user
 .user {
-    background-color: white;
-    width: 80%;
-    border: $primary-color 1px solid;
-    margin: 1rem;
-    padding: 1rem;
+    @include panel();
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
-    box-shadow: .5rem .5rem 1rem $primary-color;
 }
 .user-left {
     display: flex;
@@ -115,7 +119,12 @@ hr {
     }
 }
 
-// 6. media query
+// 6. search bar
+.search-bar {
+    @include panel();
+}
+
+// 7. media query
 @media (min-width: 1000px) {
     header {
         background-image: url(../images/bg-header-desktop.svg);

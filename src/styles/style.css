@@ -97,6 +97,8 @@ main {
   border: #5ba4a4 1px solid;
   margin: 1rem;
   padding: 1rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
+          box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,8 +109,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
-          box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
 }
 
 .user-left {
@@ -211,6 +211,16 @@ hr {
   outline: none;
   background-color: #5ba4a4;
   color: #effafa;
+}
+
+.search-bar {
+  background-color: white;
+  width: 80%;
+  border: #5ba4a4 1px solid;
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
+          box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
 }
 
 @media (min-width: 1000px) {
