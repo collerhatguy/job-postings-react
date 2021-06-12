@@ -4,6 +4,7 @@
 // 3. header
 // 4. app
 // 5. user
+// 6. media query
 
 // 1. reset
 @import "./reset";
@@ -53,6 +54,11 @@ main {
     align-items: flex-start;
     flex-flow: column wrap;
 }
+.user-left {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
 .user-top {
     display: flex;
     justify-content: center;
@@ -93,4 +99,19 @@ hr {
     text-align: center;
     margin: 1rem;
     padding: 1rem .5rem .2rem;
+}
+
+// 6. media query
+@media (min-width: 1000px) {
+    header {
+        background-image: url(../images/bg-header-desktop.svg);
+    }
+    hr {
+       display: none;
+    }
+    .user {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
