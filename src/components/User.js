@@ -10,8 +10,8 @@ export default function User({user}) {
                     className="user-company">
                     {user.company}
                 </h3>
-                {user.new ? <span>New</span> : null}
-                {user.featured ? <span>Featured</span> : null}
+                {user.new ? <span   className="new">NEW!</span> : null}
+                {user.featured ? <span className="featured">Featured</span> : null}
             </div>
             <h4 
                 className="user-position">

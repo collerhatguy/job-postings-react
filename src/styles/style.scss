@@ -11,6 +11,15 @@
 // 2. variables
 @import "./variables";
 
+@mixin pill($background) {
+    padding: 1rem 1rem .5rem;
+    margin: 1rem 1rem .5rem;
+    font-size: 1.2rem;
+    border-radius: 1000px;
+    background-color: $background;
+    color: white;
+}
+
 // 3. header
 header {
     background-color: $primary-color;
@@ -26,9 +35,48 @@ header {
 main {
     background-color: $neutral-color-100;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
 }
 
 // 5. user
 .user {
+    background-color: white;
+    width: 80%;
     border: $primary-color 1px solid;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+.user-top {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.user-company {
+    color: $primary-color;
+    margin: 1rem;
+}
+.new {
+    @include pill($primary-color);
+}
+.featured {
+    @include pill(black);
+}
+.user-position {
+    margin: 1rem;
+    font-weight: 700;
+}
+p {
+    margin: 1rem;
+    color: $neutral-color-300;
+}
+hr {
+    margin: 1rem 0;
+    width: 100%;
 }
