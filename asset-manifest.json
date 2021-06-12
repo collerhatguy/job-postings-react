@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/job-postings-react/static/css/main.fdfc3f32.chunk.css",
+    "main.js": "/job-postings-react/static/js/main.413d2bb4.chunk.js",
+    "main.js.map": "/job-postings-react/static/js/main.413d2bb4.chunk.js.map",
+    "runtime-main.js": "/job-postings-react/static/js/runtime-main.0136ef80.js",
+    "runtime-main.js.map": "/job-postings-react/static/js/runtime-main.0136ef80.js.map",
+    "static/js/2.9d71cde2.chunk.js": "/job-postings-react/static/js/2.9d71cde2.chunk.js",
+    "static/js/2.9d71cde2.chunk.js.map": "/job-postings-react/static/js/2.9d71cde2.chunk.js.map",
+    "index.html": "/job-postings-react/index.html",
+    "static/css/main.fdfc3f32.chunk.css.map": "/job-postings-react/static/css/main.fdfc3f32.chunk.css.map",
+    "static/js/2.9d71cde2.chunk.js.LICENSE.txt": "/job-postings-react/static/js/2.9d71cde2.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/job-postings-react/static/media/bg-header-mobile.9cb13612.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0136ef80.js",
+    "static/js/2.9d71cde2.chunk.js",
+    "static/css/main.fdfc3f32.chunk.css",
+    "static/js/main.413d2bb4.chunk.js"
+  ]
+}
