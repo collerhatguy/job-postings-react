@@ -1,9 +1,10 @@
 import "./styles/style.css";
-import data from "./data.json";
+import initialData from "./data.json";
 import User from "./components/User";
+import { useState } from "react";
 
 function App() {
-  console.log(data);
+  const [data, setData] = useState(initialData)
   return (
     <main className="job-list">
       {data.map(user => <User user={user} key={user.id}/>)}
