@@ -80,3 +80,17 @@ hr {
     margin: 1rem 0;
     width: 100%;
 }
+.user-language-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.user-language, .user-tool {
+    font-weight: 700;
+    color: $primary-color;
+    background-color: $neutral-color-100;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem .5rem .2rem;
+}

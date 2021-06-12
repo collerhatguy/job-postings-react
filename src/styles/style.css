@@ -158,4 +158,27 @@ hr {
   margin: 1rem 0;
   width: 100%;
 }
+
+.user-language-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-language, .user-tool {
+  font-weight: 700;
+  color: #5ba4a4;
+  background-color: #effafa;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem .5rem .2rem;
+}
 /*# sourceMappingURL=style.css.map */
