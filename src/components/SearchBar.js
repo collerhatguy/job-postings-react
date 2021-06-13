@@ -10,7 +10,7 @@ export default function SearchBar({setData, initialData}) {
         if (newSearch === "") return;
         setSearches(prevSearches => [...prevSearches, newSearch]);
         searchInput.current.value = "";
-        setNewSearch("")
+        setNewSearch("");
     }
     useEffect(() => {
         const filteredData = initialData.filter(data => {
@@ -37,7 +37,7 @@ export default function SearchBar({setData, initialData}) {
             </ul>
             <input ref={searchInput} type="text" onChange={e => setNewSearch(e.target.value)} />
             <button onClick={() => handleNewSearch()}>Submit</button>
-            <button>Clear</button>
+            <button onClick={() => setSearches([])}>Clear</button>
         </div>
     )
 } 
