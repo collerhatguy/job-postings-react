@@ -12,14 +12,14 @@ export default function SearchBar() {
     }
     return (
         <div className="search-bar">
-            <div className="search-list">
+            <ul className="search-list">
                 {searches?.map(search => <Search 
                     search={search} 
                     undo={() => setSearches(searches.filter(search2 => {
                         return search2 !== search;
                     }))} />
                 )}
-            </div>
+            </ul>
             <input ref={searchInput} type="text" onChange={e => setNewSearch(e.target.value)} />
             <button onClick={() => handleNewSearch()}>Submit</button>
             <button>Clear</button>

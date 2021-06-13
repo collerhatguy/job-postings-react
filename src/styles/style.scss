@@ -123,6 +123,35 @@ hr {
 .search-bar {
     @include panel();
 }
+.search {
+    width: min-content;
+    font-weight: 700;
+    color: $primary-color;
+    background-color: $neutral-color-100;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem .5rem .2rem;
+    padding-right: 40px;
+    position: relative;
+    button {
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        border-radius: 5px;
+        width: 30px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 0;
+        background-color: $primary-color;
+        color: white;
+        &:hover, &:focus {
+            outline: none;
+            background-color: black;
+        }
+    }
+}
 
 // 7. media query
 @media (min-width: 1000px) {
