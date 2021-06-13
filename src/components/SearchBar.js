@@ -15,12 +15,9 @@ export default function SearchBar({setData, initialData}) {
     useEffect(() => {
         const filteredData = initialData.filter(data => {
             return data.languages.some(language => {
-                searches.forEach(search => {
-                    if (search === language) return true;
+                    return searches.some(search => search === language)
                 })
-                return false;
             })
-        })
         if (filteredData.length === 0) return;
         setData(filteredData);
        
