@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Search({search}) {
+export default function Search({search, undo}) {
     return (
         <div className="search">
             {search}
-            <button>X</button>
+            <button onClick={() => undo()}>X</button>
         </div>
     )
 }
