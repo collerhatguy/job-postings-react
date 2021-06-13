@@ -177,6 +177,15 @@ p {
   color: #7b8e8e;
 }
 
+.dot {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 .5rem;
+  background-color: #7b8e8e;
+  border-radius: 100%;
+}
+
 hr {
   margin: 1rem 0;
   width: 100%;

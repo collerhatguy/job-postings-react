@@ -19,7 +19,7 @@ export default function User({user}) {
                     {user.position}
                 </h4>
                 <p>
-                    {user.postedAt} * {user.contract} * {user.location}
+                    {user.postedAt} <span className="dot"></span> {user.contract} <span className="dot"></span> {user.location}
                 </p>
             </div>
             <hr/>
