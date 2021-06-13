@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Search from "./Search";
 
 export default function SearchBar() {
+    const searchInput = useRef(); 
     const [searches, setSearches] = useState([]);
     const [newSearch, setNewSearch] = useState("");
     const handleNewSearch = () => {
+        if (newSearch === "") return;
         setSearches(prevSearches => [...prevSearches, newSearch]);
-        setNewSearch("");
+        searchInput.current.value = "";
     }
     return (
         <div className="search-bar">
@@ -18,7 +20,7 @@ export default function SearchBar() {
                     }))} />
                 )}
             </div>
-            <input type="text" onChange={e => setNewSearch(e.target.value)} />
+            <input ref={searchInput} type="text" onChange={e => setNewSearch(e.target.value)} />
             <button onClick={() => handleNewSearch()}>Submit</button>
             <button>Clear</button>
         </div>
