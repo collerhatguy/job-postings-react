@@ -9,6 +9,7 @@ export default function SearchBar() {
         if (newSearch === "") return;
         setSearches(prevSearches => [...prevSearches, newSearch]);
         searchInput.current.value = "";
+        setNewSearch("")
     }
     return (
         <div className="search-bar">
