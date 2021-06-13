@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState(initialData)
   return (
     <main className="job-list">
-      <SearchBar />
+      <SearchBar setData={setData} initialData={initialData} />
       {data.map(user => <User user={user} key={user.id}/>)}
     </main>
   );
