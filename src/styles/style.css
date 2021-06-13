@@ -266,6 +266,19 @@ hr {
   background-color: black;
 }
 
+.clear {
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: white;
+  color: #5ba4a4;
+  border: 0;
+}
+
+.clear:hover, .clear:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
 @media (min-width: 1000px) {
   header {
     background-image: url(../images/bg-header-desktop.svg);

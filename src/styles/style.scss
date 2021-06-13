@@ -156,6 +156,17 @@ hr {
         }
     }
 }
+.clear {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: white;
+    color: $primary-color;
+    border: 0;
+    &:hover, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+} 
 
 // 7. media query
 @media (min-width: 1000px) {
