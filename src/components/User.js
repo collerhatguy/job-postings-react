@@ -24,10 +24,10 @@ export default function User({user}) {
             </div>
             <hr/>
             <ul className="user-language-list">
-                {user.languages.map(language => {
+                {user.languages?.map(language => {
                     return <li className="user-language">{language}</li>
                 })}
-                {user.tools.map(tool => {
+                {user.tools?.map(tool => {
                     return <li className="user-tool">{tool}</li>
                 })}
             </ul>
