@@ -22,6 +22,8 @@ export default function SearchBar({setData, initialData}) {
             })
         if (filteredData.length === 0) return;
         setData(filteredData);
+        if (searches.length === 0) return;
+        setData(initialData);
        
     }, [searches])
     return (
@@ -34,12 +36,17 @@ export default function SearchBar({setData, initialData}) {
                     }))} />
                 )}
             </ul>
-            <input ref={searchInput} type="text" onChange={e => setNewSearch(e.target.value)} />
-            <button onClick={() => handleNewSearch()}>Submit</button>
-            <button
-                className="clear" 
-                onClick={() => setSearches([])}
-            >Clear</button>
+            <div className="input-container">
+                <input ref={searchInput} type="text" onChange={e => setNewSearch(e.target.value)} />
+                <button
+                    className="submit" 
+                    onClick={() => handleNewSearch()}
+                >Submit</button>
+                <button
+                    className="clear" 
+                    onClick={() => setSearches([])}
+                >Clear</button>
+            </div>
         </div>
     )
 } 

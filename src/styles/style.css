@@ -230,6 +230,12 @@ hr {
   padding: 1rem;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
           box-shadow: 0.5rem 0.5rem 1rem #5ba4a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .search {
@@ -266,15 +272,25 @@ hr {
   background-color: black;
 }
 
-.clear {
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.clear, .submit {
   cursor: pointer;
   font-size: 2rem;
+  margin: 1rem;
   background-color: white;
   color: #5ba4a4;
   border: 0;
 }
 
-.clear:hover, .clear:focus {
+.clear:hover, .clear:focus, .submit:hover, .submit:focus {
   outline: none;
   text-decoration: underline;
 }
