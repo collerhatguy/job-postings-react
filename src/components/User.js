@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function User({user}) {
-    const url = `.${user.logo}`;
+    const url = `/public${user.logo.substring(1, user.logo.length)}`
     return (
         <div className="user">
             <div className="user-left">
-                <img src={url} />
+                <img href={url} alt="logo"/>
                 <div className="user-top">
                     <h3 
                         className="user-company">
